@@ -8,7 +8,7 @@ plain='\033[0m'
 show_menu() {
     echo -e "
 ————————————————
-${yellow}欢迎使用苏念V2服务器一键部署脚本 v2.1${plain}
+${yellow}欢迎使用苏念V2服务器一键部署脚本 v2.2${plain}
 ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/suniannb/-/main/sunian.sh)${plain}
 ————————————————
   ${green}0.${plain} 退出脚本
@@ -41,9 +41,11 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
 ————————————————
   ${green}14.${plain} 其它一键整合(bbr,v2等)
 ————————————————
+  ${green}15.${plain} 一键解决 Warning: RPMDB altered outside of yum. 报错
+————————————————
 
  "
-    echo && read -p "请输入选择 [0-14]: " num
+    echo && read -p "请输入选择 [0-15]: " num
 
     case "${num}" in
         0) exit 0
@@ -76,8 +78,10 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
         ;;
         14)wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
         ;;
+        15)rm -rf /var/lib/yum/history/*.sqlite
+        ;;
 
-        *) echo -e "${red}请输入正确的数字 [0-14]${plain}"
+        *) echo -e "${red}请输入正确的数字 [0-15]${plain}"
         ;;
     esac
 }
