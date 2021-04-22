@@ -8,7 +8,7 @@ plain='\033[0m'
 show_menu() {
     echo -e "
 ————————————————
-${yellow}欢迎使用苏念V2服务器一键部署脚本 v2.0${plain}
+${yellow}欢迎使用苏念V2服务器一键部署脚本 v2.1${plain}
 ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/suniannb/-/main/sunian.sh)${plain}
 ————————————————
   ${green}0.${plain} 退出脚本
