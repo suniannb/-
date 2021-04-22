@@ -43,7 +43,7 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
 ————————————————
 
  "
-    echo && read -p "请输入选择 [0-13]: " num
+    echo && read -p "请输入选择 [0-14]: " num
 
     case "${num}" in
         0) exit 0
@@ -77,7 +77,7 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
         14)wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
         ;;
 
-        *) echo -e "${red}请输入正确的数字 [0-12]${plain}"
+        *) echo -e "${red}请输入正确的数字 [0-14]${plain}"
         ;;
     esac
 }
