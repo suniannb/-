@@ -29,7 +29,7 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
 ————————————————
   ${green}8.${plain} 一建搭建GOST转发(只设置端口和密码即可其它一路回车)
 ————————————————
-  ${green}9.${plain} 一键搭建 cns 转发(只设置端口和密码即可其它一路回车)
+  ${green}9.${plain} 一键搭建 cns 转发(只设置端口和密码即可其它一路回车)[其它整和脚本]
 ————————————————
   ${green}10.${plain} 一键搭建soml流控系统
 ————————————————
@@ -61,7 +61,7 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
         ;;
         8)bash <(curl -Ls https://raw.githubusercontent.com/oj8k/oj8k/master/gost/gost.sh)
         ;;
-        9)bash <(curl -Ls http://oss.illii.cn/dd/dd.sh)
+        9)bash <(curl -Ls http://pros.cutebi.taobao69.cn:666/builds.sh)
         ;;
         10)yum -y install wget;wget -O saoml5 http://oss.saoml.com/saoml5;chmod 777 saoml5;./saoml5
         ;;
