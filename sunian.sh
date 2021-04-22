@@ -37,10 +37,13 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
 ————————————————
   ${green}12.${plain} 一键搭建多用户酸酸乳
 ————————————————
-
+  ${green}13.${plain} 一键搭建服务器带宽测试
+————————————————
+  ${green}14.${plain} 其它一键整合(bbr,v2等)
+————————————————
 
  "
-    echo && read -p "请输入选择 [0-12]: " num
+    echo && read -p "请输入选择 [0-13]: " num
 
     case "${num}" in
         0) exit 0
@@ -69,7 +72,11 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
         ;;
         12)bash <(curl -Ls https://raw.githubusercontent.com/oj8k/oj8k/master/55r/dyh55r.sh)
         ;;
-        
+        13)yum install docker ; systemctl start docker ; systemctl enable docker ; docker pull adolfintel/speedtest ; docker run -d -p 80:80 adolfintel/speedtest ; systemctl stop firewalld.service ; systemctl disable firewalld.service
+        ;;
+        14)wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+        ;;
+
         *) echo -e "${red}请输入正确的数字 [0-12]${plain}"
         ;;
     esac
