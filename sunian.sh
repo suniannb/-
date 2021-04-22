@@ -9,7 +9,7 @@ show_menu() {
     echo -e "
 ————————————————
 ${yellow}欢迎使用苏念V2服务器一键部署脚本 v2.0${plain}
-${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/suniannb/-/main/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2v2.sh)${plain}
+${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/suniannb/-/main/sunian.sh)${plain}
 ————————————————
   ${green}0.${plain} 退出脚本
 ————————————————
