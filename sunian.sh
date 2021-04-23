@@ -74,7 +74,7 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
         ;;
         12)bash <(curl -Ls https://raw.githubusercontent.com/oj8k/oj8k/master/55r/dyh55r.sh)
         ;;
-        13)yum install docker ; systemctl start docker ; systemctl enable docker ; docker pull adolfintel/speedtest ; docker run -d -p 80:80 adolfintel/speedtest ; systemctl stop firewalld.service ; systemctl disable firewalld.service
+        13)yum install docker ; systemctl start docker ; systemctl enable docker ; docker pull adolfintel/speedtest ; docker run -d -p 1080:1080 adolfintel/speedtest ; systemctl stop firewalld.service ; systemctl disable firewalld.service ; echo -e "${green}测速地址:${yellow}ip:1080 ${red}温馨提醒:测速相当消耗服务器流量，请理性使用${plain}" ; exit 0
         ;;
         14)wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
         ;;
