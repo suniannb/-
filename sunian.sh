@@ -19,7 +19,7 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
 ————————————————
   ${green}3.${plain} 一键安装v2-ui管理面板
 ————————————————
-  ${green}4.${plain} 一键安装 bbr 加速核心
+  ${green}4.${plain} 一键安装 bbr 加速核心(其它整合)
 ————————————————
   ${green}5.${plain} 一键重装服务器操作系统
 ————————————————
