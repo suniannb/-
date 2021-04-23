@@ -8,7 +8,7 @@ plain='\033[0m'
 show_menu() {
     echo -e "
 ————————————————
-${yellow}欢迎使用苏念V2服务器一键部署脚本 v2.4${plain}
+${yellow}欢迎使用苏念V2服务器一键部署脚本 v2.5${plain}
 ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/suniannb/-/main/sunian.sh)${plain}
 ————————————————
   ${green}0.${plain} 退出脚本
@@ -76,7 +76,7 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
         ;;
         12)bash <(curl -Ls https://raw.githubusercontent.com/oj8k/oj8k/master/55r/dyh55r.sh)
         ;;
-        13)bash <(curl -Ls https://raw.githubusercontent.com/oj8k/oj8k/master/ces/ZBench-CN.sh)
+        13)bash <(curl -Lso- https://git.io/superspeed)
         ;;
         14)wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
         ;;
