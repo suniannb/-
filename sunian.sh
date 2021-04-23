@@ -84,7 +84,6 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
         ;;
         16)bash <(curl -Ls http://oss.illii.cn/bbr/bbr.sh)
         ;;
-        ;;
 
         *) echo -e "${red}请输入正确的数字 [0-16]${plain}"
         ;;
