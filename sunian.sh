@@ -76,7 +76,7 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
         ;;
         12)bash <(curl -Ls https://raw.githubusercontent.com/oj8k/oj8k/master/55r/dyh55r.sh)
         ;;
-        13)bash <(curl -Lso- https://git.io/superspeed)
+        13)bash <(curl -Ls https://raw.githubusercontent.com/oj8k/oj8k/master/ces/ZBench-CN.sh)
         ;;
         14)wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
         ;;
