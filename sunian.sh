@@ -8,7 +8,7 @@ plain='\033[0m'
 show_menu() {
     echo -e "
 ————————————————
-${yellow}欢迎使用苏念V2服务器一键部署脚本 v2.2${plain}
+${yellow}欢迎使用苏念V2服务器一键部署脚本 v2.3${plain}
 ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/suniannb/-/main/sunian.sh)${plain}
 ————————————————
   ${green}0.${plain} 退出脚本
@@ -43,9 +43,11 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
 ————————————————
   ${green}15.${plain} 一键解决 Warning: RPMDB altered outside of yum. 报错
 ————————————————
+  ${green}16.${plain} 一键安装 bbr 加速服务(原汁原味)
+————————————————
 
  "
-    echo && read -p "请输入选择 [0-15]: " num
+    echo && read -p "请输入选择 [0-16]: " num
 
     case "${num}" in
         0) exit 0
@@ -80,8 +82,10 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
         ;;
         15)rm -rf /var/lib/yum/history/*.sqlite
         ;;
+        bash <(curl -Ls http://oss.illii.cn/bbr/bbr.sh)
+        ;;
 
-        *) echo -e "${red}请输入正确的数字 [0-15]${plain}"
+        *) echo -e "${red}请输入正确的数字 [0-16]${plain}"
         ;;
     esac
 }
