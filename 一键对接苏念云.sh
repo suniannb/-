@@ -26,4 +26,5 @@ soga start
 
 echo "本次对接已结束若无错误后台已显示此设备可以使用，请联系苏念确认状态   服务器重启中....." 
 
-logout
+exit
+Logout
