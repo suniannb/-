@@ -3,9 +3,9 @@ echo "安装必要环境"
 yum install -y net-tools
 yum -y install curl
 
-yum –y install ntpdate
-timedatectl set–timezone Asia/Shanghai
-ntpdate ntp1.aliyun.com
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
+y
+
 
 systemctl start supervisord
 systemctl disable firewalld
@@ -25,4 +25,4 @@ soga start
 
 echo "本次对接已结束若无错误后台已显示此设备可以使用，请联系苏念确认状态并重连服务器" 
 
-logout
+exit
