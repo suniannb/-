@@ -32,5 +32,6 @@ echo "
 soga start
 
 echo "本次对接已结束若无错误后台已显示此设备可以使用，请联系苏念确认状态   服务器重启中....." 
+echo "一键对接指令 bash <(curl -Ls https://raw.githubusercontent.com/suniannb/-/main/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2soga%E5%90%8E%E7%AB%AF%E5%AF%B9%E6%8E%A5%E6%88%91%E7%9A%84%E6%9C%BA%E5%9C%BA%E4%B8%BB%E4%BD%93.sh)"
 
 reboot
