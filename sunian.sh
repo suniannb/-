@@ -56,7 +56,7 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
         ;;
         2) mv /usr/local/v2-ui/templates/v2ray/suniannb.html /usr/local/v2-ui/templates/v2ray/setting.html ;echo -e "${red}请手动输入v2-ui,然后输入9重启v2-ui再输入7启动v2-ui刷新配置" ; exit 0
         ;;
-        3) bash <(curl -Ls http://oss.illii.cn/v2-ui/v2-ui.sh)
+        3) bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
         ;;
         4) wget -N --no-check-certificate "https://gist.github.com/zeruns/a0ec603f20d1b86de6a774a8ba27588f/raw/4f9957ae23f5efb2bb7c57a198ae2cffebfb1c56/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
         ;;
