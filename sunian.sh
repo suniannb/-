@@ -64,7 +64,7 @@ ${green}便捷启动指令:   bash <(curl -Ls https://raw.githubusercontent.com/
         ;;
         6) uname -r ; sysctl net.ipv4.tcp_available_congestion_control ; sysctl net.ipv4.tcp_congestion_control ; sysctl net.core.default_qdisc ; lsmod | grep bbr ; exit 0
         ;;
-        7) systemctl disable firewalld ; firewall-cmd --zone=public --list-ports ; exit 0
+        7) systemctl stop firewalld.service ;systemctl disable firewalld.service ; firewall-cmd --zone=public --list-ports ; exit 0
         ;;
         8)bash <(curl -Ls https://raw.githubusercontent.com/oj8k/oj8k/master/gost/gost.sh)
         ;;
