@@ -1,15 +1,12 @@
 #!/bin/bash
 #获取80端口链接ip
 netstat -na|grep 80|awk '{print $5}'|awk -F: '{print $1}' >A;
-#获取本机ip
-IP=`curl -s ip.cip.cc`;
 #去重
 sort A | sort -u A > B ;
 #查询前过滤
 sed -i "s/STREAM//g" B>A;
-sed -i "s/$IP//g" A>B;
 #计数变量
-JS=`sed -n '$=' B`;
+JS=`sed -n '$=' A`;
 echo "当前连 接ip数为$((JS-2)) 个";
 #逐行读取并进行ip溯源
 i=1;
