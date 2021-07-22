@@ -15,4 +15,4 @@ do
         echo -e "IP溯源信息$i:\n `curl -Ls http://www.cip.cc/$myline| egrep -v "URL" | sed '/^[  ]*$/d'`";
         let i=$i+1;
         sleep 1;
-done < B;
+done < A;
