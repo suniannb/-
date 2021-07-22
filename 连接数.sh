@@ -13,7 +13,7 @@ echo "当前连 接ip数为$((JS-2)) 个";
 i=1;
 while read myline;
 do
-        echo -e "IP溯源信息$i:\n `curl -Ls http://www.cip.cc/$myline| egrep -v "URL" | sed '/^[  ]*$/d'`";
+        echo -e "IP信息溯源$i:\n `curl -Ls http://www.cip.cc/$myline| egrep -v "URL" | sed '/^[  ]*$/d'`";
         let i=$i+1;
         sleep 1;
 done < B;
